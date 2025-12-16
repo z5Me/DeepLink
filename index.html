@@ -35,10 +35,10 @@
       const nameVoucher = new URLSearchParams(window.location.search).get("nameVoucher");
       //
       if(idProduct) {
-        appUrl = `hi1://ProductDetail?idProduct=${idProduct}`;
+        appUrl = `hi1://ProductDetail/${idProduct}`;
       }
       if(idVoucher) {
-        appUrl = `hi1://VoucherDetail?idVoucher=${idVoucher}`;
+        appUrl = `hi1://VoucherDetail/${idVoucher}`;
       }
       // Mở deeplink
       window.location.href = appUrl;
